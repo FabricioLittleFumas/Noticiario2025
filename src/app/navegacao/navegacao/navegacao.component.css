@@ -1,0 +1,53 @@
+/* .azul{
+    background-color: tomato !important;
+}
+:host ::ng-deep .p-menubar-end{
+    margin-left: 0 !important;
+}
+:host ::ng-deep ul#pn_id_1, .p-menubar-root-list {
+    justify-content: end !important;
+}
+:host ::ng-deep p-menubarsub {
+    flex-basis: 100% !important;
+}
+:host ::ng-deep .p-menubar-end{
+    display: none !important;
+}
+:host  ::ng-deep .custom-menu {
+    left: auto !important; /* Remove o alinhamento padrão à esquerda */
+    /* right: 0; Alinha o menu à direita */
+  /* } */
+  /* ::ng-deep .custom-menu {
+    left: auto !important;
+    right: 0;
+  } */ 
+
+
+  
+  ::ng-deep .p-menu .left-item {
+    margin-right: auto; /* Alinha à esquerda */
+  }
+  
+  ::ng-deep .p-menu .right-item {
+    margin-left: auto; /* Alinha à direita */
+    justify-content: flex-end;
+    margin-left: 200px;
+  }
+
+
+  
+  :host ::ng-deep .p-menu .left-item {
+    margin-right: auto;
+  }
+  :host ::ng-deep  .p-menubar{
+    display: block;
+    background-color: aquamarine;
+  }
+  :host ::ng-deep .p-menu .right-item {
+    justify-content: flex-end;
+    margin-left: 200px;
+  }
+  :host ::ng-deep  .right-item {
+    margin-left: auto !important;
+    /* margin-left: 200px; */
+  }
