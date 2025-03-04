@@ -1,0 +1,66 @@
+h2{
+    background-color: yellowgreen;
+}
+h3{
+    background-color: cadetblue;
+}
+h4{
+    background-color: blueviolet;
+}
+h5{
+    background-color: violet;
+}
+h6{
+    background-color: turquoise;
+}
+.p-grid .p-col {
+    padding: 0 !important;
+  }
+  ::ng-deep .p-grid .p-col {
+    padding: 0 !important;
+  }
+.ntcSlideAbaixo, ntcSlideAbaixodireita{
+    background-repeat: no-repeat;
+    /* height: 75px; */
+    margin-top: 0;
+    /* background-size: 115px; */
+    
+    /* height: 115px ; */
+    /* background-color: red; */
+    margin-top: 0 !important;
+}
+.ntcSlideAbaixo img, .ntcSlideAbaixodireita img{
+    /* max-height: 110px; */
+    /* border: 1px solid red; */
+    /* margin-top: 0; */
+    /* display: block; */
+    width: 100%;
+    max-height: 115px;
+    margin-top: 0 !important;
+}
+.ntcSlideAbaixodireita{
+    height: 115px;
+    /* background-color: burlywood; */
+}
+.ntcSlide{
+    height: 330px ;
+}
+.ntctopNoticia{
+    height: 800px;
+    background-color: yellowgreen;
+}
+.ntcnoticiaGeneral{
+    background-color: blue;
+}
+.ntcNews{
+    background-color: rgb(42, 211, 211);
+    height: 1200px;
+}
+.missao{
+    background-color: thistle;
+    height: 350px;
+}
+.sobre{
+    background-color: chartreuse;
+    height: 350px;
+}

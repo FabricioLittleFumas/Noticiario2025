@@ -1,1 +1,49 @@
 <app-navegacao></app-navegacao>
+
+
+<div class="grid" style="margin: 0; padding: 0;">
+    <div class="col-7 col-offset-1" >
+        <div class="grid">
+            <div class="col-12 ntcSlide">
+                <app-slide></app-slide>
+            </div>
+            <div class="col-6 ntcSlideAbaixo">
+                <app-slide-abaixo [noticias]="noticias" [indexa] = 0> 
+                    <p lt-slide>1</p>
+                </app-slide-abaixo>
+            </div>
+            <div class="col-6 ntcSlideAbaixodireita">
+                <app-slide-abaixo [noticias]="noticias" [indexa] = 1> 
+                    <p lt-slide>2</p>
+                </app-slide-abaixo>
+            </div>
+        </div>
+        <div class="col-12 ntcNews">
+          <app-noticia-home [noticias]="noticias">
+          
+          </app-noticia-home>
+        </div>
+    </div>
+    <div class="col-3 ntctopNoticia">
+        <app-noticia-lateral [noticias]="noticias"></app-noticia-lateral>
+    </div>
+</div>
+<div class="grid" style="margin: 0; padding: 0;">
+    <div class="col-6 missao">
+        <app-missao></app-missao>
+    </div>
+    <div class="col-6 sobre">
+        <app-sobre-nos></app-sobre-nos>
+    </div>
+</div>
+<div class="grid" style="margin: 0; padding: 0;">
+    <div class="col-4 col-offset-2">
+        <app-rodape [rodapeIndex]=0></app-rodape>
+    </div>
+    <div class="col-4 sobre">
+        <app-rodape [rodapeIndex]=1></app-rodape>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+

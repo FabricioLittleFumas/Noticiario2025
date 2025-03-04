@@ -1,0 +1,9 @@
+
+<div [ngClass]="['ntcSlideAbaixodireita']">
+    <ul *ngFor="let noticia of noticias; let i = index">
+        <ng-content select="['lt-slide']" *ngIf="i == indexa">
+            <li class="noticiaTextoTop">{{noticia.getTitulo}}</li>
+            <li>{{noticia.getsubtitulo}}</li>
+        </ng-content>
+    </ul>
+</div>

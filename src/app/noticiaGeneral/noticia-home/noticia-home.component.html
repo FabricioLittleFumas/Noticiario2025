@@ -1,0 +1,19 @@
+<h1>Noticias</h1>
+<ul *ngFor="let noticia of noticias">
+    <li>
+        <div class="grid">
+            <div class="col-3 imgNtcLateral">
+                <img src="https://primefaces.org/cdn/primeng/images/demo/product/lime-band.jpg" />
+            </div>
+
+            <div class="col-9 imgNtcLateralInfo">
+                <p>{{noticia.getDate  | date :'dd/MM/yyyy'}} </p>
+                <p class="noticiatitulo">{{noticia.getTitulo}}</p>
+                <p>{{noticia.getsubtitulo}}</p>
+
+            </div>
+
+        </div>
+
+    </li>
+</ul>

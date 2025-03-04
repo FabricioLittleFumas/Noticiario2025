@@ -1,0 +1,14 @@
+<h1>Destaque</h1>
+<ul *ngFor="let noticia of noticias; let i = index">
+    <li>
+        <div class="grid">
+            <div class="col-1">
+                <span>{{i}}</span>
+            </div>
+            <div class="col-11">
+                <p class="noticiatitulo">{{noticia.getTitulo}}</p>
+                <p>{{noticia.getsubtitulo}}</p>
+            </div>
+        </div>
+    </li>
+</ul>

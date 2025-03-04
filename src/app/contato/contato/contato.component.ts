@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { NavegacaoComponent } from '../../navegacao/navegacao/navegacao.component';
 
 @Component({
   selector: 'app-contato',
-  imports: [NavegacaoComponent],
+  imports: [],
   templateUrl: './contato.component.html',
-  styleUrl: './contato.component.css',
-  standalone: true
+  styleUrl: './contato.component.css'
 })
 export class ContatoComponent {
 

@@ -1,0 +1,12 @@
+<p>rodape works!</p>
+<div>
+    <ul >
+        <li *ngFor="let contato of contatos; let index=index">
+            <div *ngIf="rodapeIndex == index">
+                <p>
+                    {{contato.getendereco}}
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
