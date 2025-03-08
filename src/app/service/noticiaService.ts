@@ -1,12 +1,21 @@
 import { Injectable } from "@angular/core";
 import { Noticia } from "../model/noticia";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { ConstRequisicao } from "../contantes/constRequisicao";
+import { Observable } from "rxjs";
 
-@Injectable()
+@Injectable(
+    {
+        providedIn: NoticiaService,
+        useClass: NoticiaService,
+        deps: [HttpClientModule]
+    }
+)
 export class NoticiaService{
 
     private noticias: Array<Noticia>;
 
-    constructor(){
+    constructor(private http: HttpClient){
         this.noticias = new Array<Noticia>();
     }
 
@@ -24,6 +33,9 @@ export class NoticiaService{
 
     public getAllNoticias(): Noticia[]{
         return this.populaNoticias();
+    }
+    public findAll(): Observable<Noticia[]>{
+        return this.http.get<Noticia[]>(ConstRequisicao.UrlNoticia);
     }
 
 }

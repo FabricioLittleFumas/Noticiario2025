@@ -1,3 +1,5 @@
+
+
 p{
     background-color: violet;
 }
@@ -16,5 +18,8 @@ p{
     background-color: violet;
 }
 .noticiatitulo{
-    margin-top: 40px;
+    margin-top: 20px;
+}
+.dataNoticia{
+    font-family: 'fonteTexto';
 }

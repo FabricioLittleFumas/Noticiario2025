@@ -47,3 +47,38 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.titulo{
+    font-family: 'fonteTitulo' !important;
+    font-size: 1.3em;
+}
+.subtitulo{
+    font-family: 'fonteTexto' !important;
+    font-size: 1.1em;
+}
+
+.tituloSecao{
+	font-family: 'fonteTexto' !important;
+    font-size: 1.7em;
+    text-align: center;
+    margin: 20px 0;
+}
+.tituloSecao::after{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: red;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+@font-face {
+	font-family: 'fonteTexto';
+	src: url('./app/assets/Assistant-Regular.otf') format('opentype');
+}
+@font-face {
+	font-family: 'fonteTitulo';
+	src: url('./app/assets/Assistant-Bold.otf') format('opentype');
+}

@@ -1,0 +1,70 @@
+ 
+{
+    "Noticias": [
+      {
+        "titulo": "Título da noticia 1",
+        "subtitulo": "Subtitulo da Noticia 1",
+        "texto": "foto 1",
+        "foto": "https://primefaces.org/cdn/primeng/images/demo/product/lime-band.jpg",
+        "date": "1990/10/10"
+      },
+      {
+        "titulo": "Título da noticia 2",
+        "subtitulo": "Subtitulo da Noticia 2",
+        "texto": "foto 2",
+        "foto": "https://primefaces.org/cdn/primeng/images/demo/product/lime-band.jpg",
+        "date": "1990/10/10"
+      },
+      {
+        "titulo": "Título da noticia 3",
+        "subtitulo": "Subtitulo da Noticia 3",
+        "texto": "foto 1",
+        "foto": "https://primefaces.org/cdn/primeng/images/demo/product/lime-band.jpg",
+        "date": "1990/10/10"
+      },
+      {
+        "titulo": "Título da noticia 4",
+        "subtitulo": "Subtitulo da Noticia 4",
+        "texto": "foto 4",
+        "foto": "https://primefaces.org/cdn/primeng/images/demo/product/lime-band.jpg",
+        "date": "1990/10/10"
+      },
+      {
+        "titulo": "Título da noticia 5",
+        "subtitulo": "Subtitulo da Noticia 5",
+        "texto": "foto 5",
+        "foto": "https://primefaces.org/cdn/primeng/images/demo/product/lime-band.jpg",
+        "date": "1990/10/10"
+      },
+      {
+        "titulo": "Título da noticia 6",
+        "subtitulo": "Subtitulo da Noticia 6",
+        "texto": "foto 6",
+        "foto": "https://primefaces.org/cdn/primeng/images/demo/product/lime-band.jpg",
+        "date": "1990/10/10"
+      },
+      {
+        "titulo": "Título da noticia 7",
+        "subtitulo": "Subtitulo da Noticia 7",
+        "texto": "foto 7",
+        "foto": "https://primefaces.org/cdn/primeng/images/demo/product/lime-band.jpg",
+        "date": "1990/10/10"
+      },
+      {
+        "titulo": "Título da noticia 8",
+        "subtitulo": "Subtitulo da Noticia 8",
+        "texto": "foto 8",
+        "foto": "https://primefaces.org/cdn/primeng/images/demo/product/lime-band.jpg",
+        "date": "1990/10/10"
+      },
+      {
+        "titulo": "Título da noticia 9",
+        "subtitulo": "Subtitulo da Noticia 9",
+        "texto": "foto 9",
+        "foto": "https://primefaces.org/cdn/primeng/images/demo/product/lime-band.jpg",
+        "date": "1990/10/10"
+      }
+     
+    ]
+  }
+  

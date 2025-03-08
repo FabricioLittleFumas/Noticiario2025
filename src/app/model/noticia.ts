@@ -1,11 +1,11 @@
 
 
 export class Noticia{
-    private titulo: string;
-    private subtitulo: string;
-    private texto: string;
-    private foto: string;
-    private date: Date;
+    public titulo: string;
+    public subtitulo: string;
+    public texto: string;
+    public foto: string;
+    public date: Date;
 
 
     constructor(titulo : string, subtitulo : string, texto: string, foto: string){

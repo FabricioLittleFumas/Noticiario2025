@@ -11,10 +11,11 @@ import { Noticia } from '../../model/noticia';
 import { CommonModule } from '@angular/common';
 import { NoticiaLateralComponent } from '../../noticiaLateral/noticia-lateral/noticia-lateral.component';
 import { SlideAbaixoComponent } from '../../slideAbaixo/slide-abaixo/slide-abaixo.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
-  imports: [SlideAbaixoComponent,NoticiaLateralComponent, CommonModule, NavegacaoComponent, SlideComponent, RouterOutlet, NoticiaHomeComponent, MissaoComponent, SobreNosComponent, RodapeComponent],
+  imports: [HttpClientModule, SlideAbaixoComponent,NoticiaLateralComponent, CommonModule, NavegacaoComponent, SlideComponent, RouterOutlet, NoticiaHomeComponent, MissaoComponent, SobreNosComponent, RodapeComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   providers: [NoticiaService],
@@ -22,13 +23,21 @@ import { SlideAbaixoComponent } from '../../slideAbaixo/slide-abaixo/slide-abaix
 })
 export class HomeComponent implements OnInit{
   public noticias: Noticia[]= [];
-  constructor(private noticiaService: NoticiaService){
+  constructor(private noticiaService: NoticiaService, private http: HttpClient){
 
   }
   ngOnInit(): void {
-    this.noticias =  this.noticiaService.getAllNoticias();
-    console.log("dentro do home noticia");
+    // this.noticias =  this.noticiaService.getAllNoticias();
+    // console.log("dentro do home noticia");
+    // console.log(this.noticias);
+
+    this.noticiaService.findAll().subscribe((noticias) => {
+      this.noticias.push();
+      this.noticias = noticias;
+    });
+    console.log("servico de buscas");
     console.log(this.noticias);
   }
+  
 
 }
