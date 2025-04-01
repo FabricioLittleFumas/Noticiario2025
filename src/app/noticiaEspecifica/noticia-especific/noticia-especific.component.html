@@ -1,11 +1,16 @@
 <app-navegacao></app-navegacao>
-
 <div class="grid" style="margin: 0; padding: 0;">
     <div class="col-7 col-offset-1 noticia" >
-        <app-noticia-home [noticias]="noticias"> </app-noticia-home>
+       <div *ngFor="let ntc of noticia">
+            <h1>{{ntc.titulo}}</h1>  
+            <h2>{{ntc.subtitulo}}</h2>
+            <h3>{{ntc.date}}</h3>
+            <p>{{ntc.texto}}</p>
+            <img [src]="ntc.foto" alt="">
+
+        </div>
     </div>
     <div class="col-3 ntctopNoticia lateral">
         <app-noticia-lateral [noticias]="noticias"></app-noticia-lateral>
     </div>
 </div>
-<router-outlet></router-outlet>

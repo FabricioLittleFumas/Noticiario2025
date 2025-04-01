@@ -31,7 +31,7 @@
   ::ng-deep .p-menu .right-item {
     margin-left: auto; /* Alinha à direita */
     justify-content: flex-end;
-    margin-left: 200px;
+    /* margin-left: 200px; */
   }
 
 
@@ -49,5 +49,9 @@
   }
   :host ::ng-deep  .right-item {
     margin-left: auto !important;
+    /* margin-left: 200px; */
+  }
+  :host ::ng-deep  .right-items {
+    margin-left: 1px !important;
     /* margin-left: 200px; */
   }

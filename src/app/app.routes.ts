@@ -5,6 +5,9 @@ import { HomeComponent } from './home/home/home.component';
 import { PgNaoEncontradaComponent } from './paginaNaoEncontrada/pg-nao-encontrada/pg-nao-encontrada.component';
 import { ContatoComponent } from './contato/contato/contato.component';
 import { NoticiaComponent } from './noticia/noticia/noticia.component';
+import { NoticiaDeftComponent } from './noticia-deft/noticia-deft.component';
+import { NoticiaEspecificComponent } from './noticiaEspecifica/noticia-especific/noticia-especific.component';
+
 
 export const routes: Routes = [
     {
@@ -17,7 +20,12 @@ export const routes: Routes = [
         path: 'contato', component: ContatoComponent
     },
     {
-        path: 'noticia', component: NoticiaComponent
+        path: 'noticia', component: NoticiaDeftComponent,
+        children: [
+            // {path: '', redirectTo: '', pathMatch: 'full' },
+            {path: '', component:NoticiaComponent, pathMatch: 'full' },
+            {path: ':id', component: NoticiaEspecificComponent ,pathMatch: 'prefix' } 
+        ]
     },
     {
         path: '**', component: PgNaoEncontradaComponent

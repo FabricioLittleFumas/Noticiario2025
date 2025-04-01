@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
-import { Product } from '../../product';
-import { ProductService } from '../../product.service';
+
 import { ButtonModule } from 'primeng/button'; 
 import { TagModule } from 'primeng/tag'; 
 import { CommonModule } from '@angular/common';
+import { ProductService } from '../../../../product.service';
 
 @Component({
   selector: 'app-slide',

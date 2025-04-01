@@ -1,20 +1,37 @@
 
 
 export class Noticia{
+    public id: number;
     public titulo: string;
     public subtitulo: string;
     public texto: string;
     public foto: string;
     public date: Date;
 
+    *[Symbol.iterator]() {
+        yield this.id;
+        yield this.titulo;
+        yield this.subtitulo;
+        yield this.texto;
+        yield this.date;
+      }
 
-    constructor(titulo : string, subtitulo : string, texto: string, foto: string){
+    constructor(id: number, titulo : string, subtitulo : string, texto: string, foto: string){
         this.titulo = titulo;
+        this.id = id;
         this.subtitulo = subtitulo;
         this.texto = texto;
         this.foto = foto;
         this.date = new Date();
     }
+    public set setId(id: number){
+        this.id = id;
+    }
+
+    public get getId(){
+        return this.id;
+    }
+
     public set setDate(date: Date){
         this.date = date;
     }

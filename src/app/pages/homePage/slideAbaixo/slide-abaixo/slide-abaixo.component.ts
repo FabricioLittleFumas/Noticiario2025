@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { Noticia } from '../../model/noticia';
+import { Noticia } from '../../../../model/noticia';
+
 
 @Component({
   selector: 'app-slide-abaixo',

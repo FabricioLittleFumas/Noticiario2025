@@ -24,7 +24,8 @@ export class NavegacaoComponent implements OnInit {
           {
               label: 'Noticia',
               icon: 'pi pi-star',
-              routerLink: '/noticia'
+              routerLink: '/noticia',
+            //   queryParams: {'size': 10,'order': 'asc'}
           },
           {
               label: 'Projects',
@@ -63,7 +64,19 @@ export class NavegacaoComponent implements OnInit {
               icon: 'pi pi-envelope',
               routerLink: '/contato',
               styleClass: 'right-item'
-          }
+          },
+          {
+            label: 'Entrar',
+            icon: 'pi pi-envelope',
+            routerLink: '/contato',
+            styleClass: 'right-items'
+        },
+          {
+            label: 'Cadastrar',
+            icon: 'pi pi-envelope',
+            routerLink: '/contato',
+            styleClass: 'right-items'
+        }
       ]
   }
 }
