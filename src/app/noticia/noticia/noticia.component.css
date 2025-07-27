@@ -34,12 +34,12 @@ p{
 .dataNoticia{
     font-family: 'fonteTexto';
 }
-.noticia{
+/* .noticia{
     background-color: tomato;
-}
-.lateral{
+} */
+/* .lateral{
     background-color: blueviolet;
-}
+} */
 .numeral{
     font-size: 2em;
     padding-right: 10px;

@@ -1,7 +1,19 @@
 .numeral{
     font-size: 2em;
     padding-right: 10px;
+    font-family: 'fonteTexto' !important;
 }
 .items{
     margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+     border-bottom: 1px solid #e0e0e0;
+}
+ul li:hover{
+    background-color : rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+li a {
+    text-decoration: none;
+    color: black;
 }

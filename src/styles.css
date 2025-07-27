@@ -68,7 +68,8 @@ table {
     display: block;
     width: 25px;
     height: 2px;
-    background-color: red;
+    /* background-color: red; */
+	  background-color: rgb(0, 255, 170);
     text-align: center;
     margin: 0 auto;
     margin-top: 5px;

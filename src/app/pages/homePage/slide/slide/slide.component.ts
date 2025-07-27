@@ -34,7 +34,7 @@ export class SlideComponent  implements OnInit {
           },
           {
               breakpoint: '1199px',
-              numVisible: 3,
+              numVisible: 2,
               numScroll: 1
           },
           {

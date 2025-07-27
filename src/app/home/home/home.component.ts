@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentInit, Component, OnInit } from '@angular/core';
 import { NavegacaoComponent } from '../../navegacao/navegacao/navegacao.component';
 
 import { RouterOutlet } from '@angular/router';
@@ -26,23 +26,12 @@ import { SobreNosComponent } from '../../pages/homePage/sobreNos/sobre-nos/sobre
   providers: [NoticiaService],
   standalone: true
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements AfterContentInit{
   public noticias: Noticia[]= [];
   constructor(private noticiaService: NoticiaService, private http: HttpClient){
 
   }
-  ngOnInit(): void {
-    // this.noticias =  this.noticiaService.getAllNoticias();
-    // console.log("dentro do home noticia");
-    // console.log(this.noticias);
-
-    // this.noticiaService.findAll().subscribe((noticias) => {
-    //   this.noticias.push();
-    //   this.noticias = noticias;
-    // });
-
-
-
+  ngAfterContentInit(): void {
     this.noticiaService.findAll().subscribe(
       noticia => {
         console.log('atual 1');
@@ -51,12 +40,8 @@ export class HomeComponent implements OnInit{
         // this.noticiaService.setData(noticia);
       }
     );
-
-
-
-    console.log("servico de buscas");
-    console.log(this.noticias);
   }
+  
   
 
 }

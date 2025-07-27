@@ -1,11 +1,6 @@
 
 
-p{
-    background-color: violet;
-}
 .listaNoticias{
-    background-color: red;
-    margin-top: 5px;
     height: 120px;
 }
 .imgNtcLateral img{
@@ -14,12 +9,29 @@ p{
 }
 .imgNtcLateralInfo{
     height: 120px;
-    margin-top: 7px;
-    background-color: violet;
 }
-.noticiatitulo{
-    margin-top: 20px;
-}
-.dataNoticia{
+
+
+ul li a {
     font-family: 'fonteTexto';
+    text-decoration: none;
+    color: black;
+}
+ul li a div div p, ul li a div div img{
+
+    margin-top: 5px !important;
+}
+ul li:hover{
+    background-color : rgba(0, 0, 0, .2);
+}
+.imgNtcLateralInfo .noticiatitulo.titulo{
+    padding-top: 30px !important;
+    /* background-color: red; */
+}
+
+.items{
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+     border-bottom: 1px solid #e0e0e0;
 }

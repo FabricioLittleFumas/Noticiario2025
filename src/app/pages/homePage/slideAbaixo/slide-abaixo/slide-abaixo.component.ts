@@ -18,7 +18,7 @@ export class SlideAbaixoComponent implements OnChanges{
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.indexa = changes['indexa'].currentValue;
+    // this.indexa = changes['indexa'].currentValue;
   }
 
 }

@@ -11,5 +11,29 @@
     background-image: url('https://primefaces.org/cdn/primeng/images/demo/product/bamboo-watch.jpg');
 }
 .noticiaTextoTop{
-    margin-top: 60px !important;
+    margin-top: 50px !important;
+   padding-bottom: 25px;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: rgb(255, 255, 255);
+   font-size: 1.25em;
+}
+
+.ntcSlideAbaixo[_ngcontent-ng-c1939363504] img[_ngcontent-ng-c1939363504], .ntcSlideAbaixodireita[_ngcontent-ng-c1939363504]{  
+    width: 95%;
+    margin: 0 auto;
+}
+.descricaoTopic, .leftTopic{
+    color: beige;
+    font-family: 'fonteTexto' !important;
+}
+
+
+.leftTopic{
+ padding-left: 15px;
+ text-transform: capitalize;
+}
+.descricaoTopic{
+    padding-top: 7px;
+    font-weight: bold;
 }

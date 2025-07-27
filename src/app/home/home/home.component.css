@@ -13,6 +13,9 @@ h5{
 h6{
     background-color: turquoise;
 }
+*{
+	background-color: rgba(243, 236, 223, 0.788);
+}
 .p-grid .p-col {
     padding: 0 !important;
   }
@@ -47,13 +50,13 @@ h6{
 }
 .ntctopNoticia{
     height: 800px;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 }
 .ntcnoticiaGeneral{
     background-color: blue;
 }
 .ntcNews{
-    background-color: rgb(42, 211, 211);
+    /* background-color: rgb(42, 211, 211); */
     height: 1200px;
 }
 .missao{

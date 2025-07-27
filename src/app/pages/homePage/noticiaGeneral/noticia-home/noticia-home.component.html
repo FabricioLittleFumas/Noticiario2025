@@ -1,7 +1,7 @@
 <h1 class="tituloSecao">Noticias</h1>
 <ul *ngFor="let noticia of noticias; let i = index">
-    <li>
-        <a [routerLink]="['/noticia', noticia.id]">
+    <li class="items">
+        <a [routerLink]="['/noticia', noticia.id]" >
 
             <div class="grid">
                 <div class="col-3 imgNtcLateral">
@@ -9,11 +9,9 @@
                 </div>
                 
                 <div class="col-9 imgNtcLateralInfo">
-                    <p class="dataNoticia">{{noticia?.date  | date :'dd/MM/yyyy'  }} </p>
+                    <p>{{noticia?.date  | date :'dd/MM/yyyy'  }} </p>
                     <p class="noticiatitulo titulo">{{noticia?.titulo}}</p>
                     <p class="subtitulo">{{noticia?.subtitulo}}</p>
-                    
-                    
                 </div>
                 
             </div>

@@ -1,8 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 import { Menubar } from 'primeng/menubar'; 
+
+
 @Component({
   selector: 'app-navegacao',
   imports: [Menubar, RouterModule,CommonModule],
@@ -12,6 +14,8 @@ import { Menubar } from 'primeng/menubar';
 })
 export class NavegacaoComponent implements OnInit {
   items: MenuItem[] | undefined;
+
+  
 
   ngOnInit() {
       this.items = [
@@ -68,7 +72,7 @@ export class NavegacaoComponent implements OnInit {
           {
             label: 'Entrar',
             icon: 'pi pi-envelope',
-            routerLink: '/contato',
+            command: () => this.showModal(),
             styleClass: 'right-items'
         },
           {
@@ -79,4 +83,8 @@ export class NavegacaoComponent implements OnInit {
         }
       ]
   }
+  
+  showModal() {
+  }
+
 }

@@ -8,7 +8,6 @@ import { NoticiaComponent } from './noticia/noticia/noticia.component';
 import { NoticiaDeftComponent } from './noticia-deft/noticia-deft.component';
 import { NoticiaEspecificComponent } from './noticiaEspecifica/noticia-especific/noticia-especific.component';
 
-
 export const routes: Routes = [
     {
         path: '', redirectTo:  'home', pathMatch:'full'
@@ -24,7 +23,7 @@ export const routes: Routes = [
         children: [
             // {path: '', redirectTo: '', pathMatch: 'full' },
             {path: '', component:NoticiaComponent, pathMatch: 'full' },
-            {path: ':id', component: NoticiaEspecificComponent ,pathMatch: 'prefix' } 
+            {path: ':id', component: NoticiaEspecificComponent} 
         ]
     },
     {

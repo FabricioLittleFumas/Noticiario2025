@@ -2,6 +2,7 @@
 <ng-content>
     <ul *ngFor="let noticia of noticias; let i = index">
         <li>
+            <a [routerLink]="['/noticia', noticia.id]" >
             <div class="grid items">
                 <div class="col-1 numeral">
                     <span>{{i+1}}</span>
@@ -11,6 +12,7 @@
                     <p class="subtitulo">{{noticia.subtitulo}}</p>
                 </div>
             </div>
+        </a>
         </li>
     </ul>
 </ng-content>

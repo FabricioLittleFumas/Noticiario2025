@@ -5,11 +5,11 @@ import { NoticiaHomeComponent } from '../../pages/homePage/noticiaGeneral/notici
 import { NoticiaLateralComponent } from '../../pages/homePage/noticiaLateral/noticia-lateral/noticia-lateral.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NoticiaService } from '../../service/noticiaService';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { plainToClass } from 'class-transformer';
 import { BrowserModule } from '@angular/platform-browser';
-import { Router } from 'express';
+
 import { log } from 'node:console';
 
 
@@ -22,16 +22,17 @@ import { log } from 'node:console';
   standalone: true
 })
 export class NoticiaEspecificComponent implements OnInit {
-   @Input() noticias: Noticia[];
+   noticias: Noticia[];
    noticia: Noticia[];
   constructor(private http: HttpClient, private noticiaService: NoticiaService, 
-    private activeRoute: ActivatedRoute){
+    private activeRoute: ActivatedRoute, private router: Router){
     // this.noticia = plainToClass(Noticia, {});
     this.noticia = new Array<Noticia>();
     this.noticias = new Array<Noticia>();
     // this.activeroute.snapshot.data['name'];
    
   }
+
   // ngAfterViewInit(): void {
   //   this.noticiaService.findById(1).subscribe(
   //     noticia => {
